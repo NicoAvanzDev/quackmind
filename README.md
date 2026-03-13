@@ -1,4 +1,4 @@
-# duckdb-memory
+# quackmind
 
 Semantic memory storage for Claude Code using DuckDB with local vector embeddings.
 
@@ -14,6 +14,8 @@ Store files, code snippets, and notes — then search them with natural language
 ## Installation
 
 ```bash
+git clone https://github.com/NicoAvanzDev/quackmind.git
+cd quackmind
 npm install
 npm run build
 ```
@@ -23,7 +25,7 @@ npm run build
 ### Option 1: Plugin directory (recommended)
 
 ```bash
-claude --plugin-dir /path/to/claude-code-duckdb-memory
+claude --plugin-dir /path/to/quackmind
 ```
 
 ### Option 2: Add to MCP servers
@@ -33,9 +35,9 @@ Add to your `claude` config (`.claude/settings.json`):
 ```json
 {
   "mcpServers": {
-    "duckdb-memory": {
+    "quackmind": {
       "command": "node",
-      "args": ["/path/to/claude-code-duckdb-memory/dist/server.js"]
+      "args": ["/path/to/quackmind/dist/server.js"]
     }
   }
 }
@@ -71,6 +73,10 @@ src/
 ├── embed.ts     # Local embedding via @xenova/transformers
 └── ingest.ts    # Text chunking and file type detection
 ```
+
+## Author
+
+[NicoAvanzDev](https://github.com/NicoAvanzDev)
 
 ## License
 

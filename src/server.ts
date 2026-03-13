@@ -17,7 +17,7 @@ const db = new MemoryDB();
 await db.initialize();
 
 const server = new McpServer({
-  name: "duckdb-memory",
+  name: "quackmind",
   version: "1.0.0",
 });
 

@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "duckdb-memory-mcp": "dist/server.js"
+    "quackmind": "dist/server.js"
   },
   "scripts": {
     "build": "tsc",
