@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-duckdb-memory",
+  "name": "quackmind",
   "version": "1.0.0",
   "description": "Claude Code plugin for semantic memory storage using DuckDB and local embeddings",
   "type": "module",

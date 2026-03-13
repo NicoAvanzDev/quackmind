@@ -1,5 +1,5 @@
 {
-  "name": "duckdb-memory",
+  "name": "quackmind",
   "description": "Semantic memory storage using DuckDB with local vector embeddings. Store, search, and retrieve files, code snippets, and notes.",
   "version": "1.0.0",
   "author": {
