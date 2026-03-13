@@ -1,0 +1,27 @@
+{
+  "name": "claude-code-duckdb-memory",
+  "version": "1.0.0",
+  "description": "Claude Code plugin for semantic memory storage using DuckDB and local embeddings",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "duckdb-memory-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "^1.5.0-r.1",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@xenova/transformers": "^2.17.2",
+    "glob": "^11.0.2",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
